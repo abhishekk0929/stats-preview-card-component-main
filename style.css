@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --white-75: hsla(0, 0%, 100%, 0.75);
+  --white-60: hsla(0, 0%, 100%, 0.6);
+  --font-inter: 'Inter', sans-serif;
+  --font-lexend: 'Lexend Deca', sans-serif;
+
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+width: 100%;
+padding: 2rem;
+}
+.maincard{
+    background-color: var(--dark-desaturated-blue);
+    max-width: 375px;
+    border-radius: 0.7rem;
+    
+
+   
+ 
+
+}
+.attribution{
+    display: flex;
+
+    padding: 0rem;
+    align-items: center;
+ flex-direction: row;
+    justify-content: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--font-lexend);
+}
+
+.attribution .white-text {
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--soft-violet);
+  text-decoration: none;
+}
+.image{
+    width: 100%;
+    padding: 0%;
+
+
+}
+.image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: hsl(277, 64%, 61%);
+  opacity: 0.6;
+  pointer-events: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.headpara {
+font-family: var(--font-lexend);
+color: white;
+ text-align: center;
+ padding: 1.5rem;
+}
+  
+
+
+.headpara  span {
+color: var(--soft-violet);    
+}
+.headpara p {
+    color: var(--white-75);
+    font-weight: 200;
+    margin-top: 1rem; 
+    line-height: 1.5rem;
+    font-family: var(--font-inter);
+}
+.numpluspara{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+.numpluspara h2 {
+    color: var(--white);
+    font-family: var(--font-lexend);
+
+}
+.numpluspara p {
+    color: var(--white-60);
+    font-family: var(--font-inter);
+}
+@media (min-width: 1440px) {
+.maincard{
+    background-color: var(--dark-desaturated-blue);
+    max-width: 1100px;
+    /* border-bottom-right-radius: 0.7rem; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+      border-radius: 0rem;
+   
+
+   
+ 
+
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: hsl(277, 64%, 61%);
+  opacity: 0.6;
+  pointer-events: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.headpara {
+font-family: var(--font-lexend);
+color: white;
+ text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.headpara h2{
+        font-size:2rem;
+        text-align: center;
+}
+
+.headpara  span {
+color: var(--soft-violet);    
+}
+.headpara p {
+    color: var(--white-75);
+    font-weight: 200;
+    
+  font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: var(--font-inter);
+}
+.numpluspara{
+    display: flex;
+ flex-direction: row;
+ justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 5rem;
+
+}
+.numpluspara h2 {
+    color: var(--white);
+    font-family: var(--font-lexend);
+    margin-bottom: 1rem;
+ 
+
+}
+.numpluspara p {
+    color: var(--white-60);
+    font-family: var(--font-inter);
+   
+
+}
+.attribution{
+    display: flex;
+    gap: 0.3rem;
+    padding: 2rem;
+    align-items: center;
+ 
+    justify-content: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--font-lexend);
+}
+
+.attribution .white-text {
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--soft-violet);
+  text-decoration: none;
+}
+
+
+
+}
